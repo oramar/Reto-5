@@ -1,0 +1,7 @@
+{
+	"db_ip"      : "Contador",
+	"dp_port"    : "3307", 
+	"db_user"    : "root",
+	"db_pssword" : "861106", 
+        "db_base"    : "reto4"
+}
