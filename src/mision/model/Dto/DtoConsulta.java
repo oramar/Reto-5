@@ -9,6 +9,11 @@ public class DtoConsulta {
     private int pacienteId;
     private int turNumero;
     
+    
+    public DtoConsulta(int conNumero, String conFecha) {
+        this.conNumero = conNumero;
+        this.conFecha = conFecha;
+    }
       public DtoConsulta(int conNumero, String conFecha, String conObservacion) {
         this.conNumero = conNumero;
         this.conFecha = conFecha;
