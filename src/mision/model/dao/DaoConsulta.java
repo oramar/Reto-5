@@ -17,6 +17,7 @@ public class DaoConsulta implements IDaoConsulta {
     private static final String SQL_UPDATE = "UPDATE consulta SET con_fecha=?,con_observacion=?,medico_id=?,paciente_id=?,tur_numero=? WHERE = con_numero=?;";
     private static final String SQL_READ = "SELECT * FROM consulta WHERE con_numero =?;";
     private static final String SQL_READALL = "SELECT * FROM consulta;";
+   
     private static final ConexionDB conn = ConexionDB.saberConexion();
 
     @Override
@@ -119,7 +120,7 @@ public class DaoConsulta implements IDaoConsulta {
     }
 
     @Override
-    public List<DtoConsulta> findAll() {
+    public ArrayList<DtoConsulta> findAll() {
           PreparedStatement ps;
           ResultSet res=null;
           ArrayList<DtoConsulta> consultas = new ArrayList<>();
